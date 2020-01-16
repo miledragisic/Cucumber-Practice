@@ -1,0 +1,87 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-16T08:37:57.568Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1683389,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Login as a driver",
+        "description": "",
+        "id": "login;login-as-a-driver",
+        "after": [
+          {
+            "result": {
+              "duration": 3225139948,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3304028168,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is on the login page",
+            "match": {
+              "location": "LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2745537016,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User logs in as driver",
+            "match": {
+              "location": "LoginStepDefs.user_logs_in_as_a_driver()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1003032,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should be able to login",
+            "match": {
+              "location": "LoginStepDefs.user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "      As a user I want to be able to login into Vytrack\n      under different roles with different username and password",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]

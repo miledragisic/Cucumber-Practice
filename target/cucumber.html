@@ -1,0 +1,262 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2019-12-25T19:59:29.262Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1264444,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Login as a driver",
+        "description": "",
+        "id": "login;login-as-a-driver",
+        "after": [
+          {
+            "result": {
+              "duration": 228087651,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3550955652,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is on the login page",
+            "match": {
+              "location": "LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2493959394,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User logs in as driver",
+            "match": {
+              "location": "LoginStepDefs.user_logs_in_as_a_driver()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 197810,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should be able to login",
+            "match": {
+              "location": "LoginStepDefs.user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@driver"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-25T19:59:35.588Z",
+        "before": [
+          {
+            "result": {
+              "duration": 626986,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Login as a store manager",
+        "description": "",
+        "id": "login;login-as-a-store-manager",
+        "after": [
+          {
+            "result": {
+              "duration": 213080476,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1979684630,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User is on the login page",
+            "match": {
+              "location": "LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3000964864,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User enters the store manager information",
+            "match": {
+              "location": "LoginStepDefs.user_enters_the_store_manager_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 186590,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should be able to login",
+            "match": {
+              "location": "LoginStepDefs.user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@store_manager"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-12-25T19:59:40.786Z",
+        "before": [
+          {
+            "result": {
+              "duration": 267216,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Login as a sales manager",
+        "description": "",
+        "id": "login;login-as-a-sales-manager",
+        "after": [
+          {
+            "result": {
+              "duration": 195181147,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 120928,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownSalesManager()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1977138408,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User is on the login page",
+            "match": {
+              "location": "LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2994803352,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters the sales manager infromation",
+            "match": {
+              "location": "LoginStepDefs.user_enters_the_sales_manager_infromation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 172320,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User should be able to login",
+            "match": {
+              "location": "LoginStepDefs.user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@sales_manager"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As a user I want to be able to login into Vytrack\n  under different roles with different username and password",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
