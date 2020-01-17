@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
 
-        features = "@target/rerun/txt",
+        features = "@target/rerun.txt",
         glue = "com/vytrack/step_definitions"
 
 )

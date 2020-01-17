@@ -91,7 +91,7 @@
                             <outputDirectory>${project.build.directory}</outputDirectory> <!-- where the report will be-->
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <jsonFiles>
-                                <param>**/cucumber*.json</param><!-- this name CUCUMBER.JASON has to be the same as in Target Folder-->
+                                <param>**/cucumber.json</param><!-- this name CUCUMBER.JSON has to be the same as in Target Folder-->
                             </jsonFiles>                        <!-- it must be able to pick up JSON FILE, if it doesn't see it i wont pick it up -->
                         </configuration>
 

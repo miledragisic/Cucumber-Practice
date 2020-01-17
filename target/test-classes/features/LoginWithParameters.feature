@@ -1,11 +1,10 @@
 Feature: Login as different users
 
-  @wip
   Scenario: Login as a driver
     Given user is on the login page
     When User logs in using "user1" and "UserUser123"
     And the title should contain "Dashboard"
-
+@wip
   Scenario: Login as a sales manager
     Given user is on the login page
     When User logs in using "salesmanager101" and "UserUser123"
