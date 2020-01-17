@@ -43,4 +43,9 @@ public class ContactsStepDefs {
 
     }
 
+    @Then("User should be logged in")
+    public void user_should_be_logged_in() {
+        System.out.println("User should be logged in");
+    }
+
 }

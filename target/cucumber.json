@@ -1,29 +1,29 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-16T08:37:57.568Z",
+        "start_timestamp": "2020-01-17T05:02:44.690Z",
         "before": [
           {
             "result": {
-              "duration": 1683389,
-              "status": "passed"
+              "duration": 966870,
+              "status": "skipped"
             },
             "match": {
               "location": "Hooks.setUp()"
             }
           }
         ],
-        "line": 9,
-        "name": "Login as a driver",
+        "line": 4,
+        "name": "Default page number",
         "description": "",
-        "id": "login;login-as-a-driver",
+        "id": "contacts-page;default-page-number",
         "after": [
           {
             "result": {
-              "duration": 3225139948,
-              "status": "passed"
+              "duration": 57349,
+              "status": "skipped"
             },
             "match": {
               "location": "Hooks.tearDown()"
@@ -35,11 +35,185 @@
         "steps": [
           {
             "result": {
-              "duration": 3304028168,
-              "status": "passed"
+              "duration": 2890387,
+              "status": "skipped"
             },
-            "line": 10,
-            "name": "User is on the login page",
+            "line": 5,
+            "name": "a driver is logged in",
+            "match": {
+              "location": "ContactsStepDefs.a_driver_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2442545,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user goes to \"Customers\" and \"Contacts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Customers\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"Contacts\"",
+                  "offset": 33
+                }
+              ],
+              "location": "ContactsStepDefs.the_user_goes_to_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1646812,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "default page number should be 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 30
+                }
+              ],
+              "location": "ContactsStepDefs.default_page_number_should_be(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-17T05:02:44.858Z",
+        "before": [
+          {
+            "result": {
+              "duration": 86295,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Menu options",
+        "description": "",
+        "id": "contacts-page;menu-options",
+        "after": [
+          {
+            "result": {
+              "duration": 46003,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1680179,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "a driver is logged in",
+            "match": {
+              "location": "ContactsStepDefs.a_driver_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5586916,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user should see following menu options",
+            "match": {
+              "location": "ContactsStepDefs2.user_should_see_following_menu_options(String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Fleet"
+                ]
+              },
+              {
+                "cells": [
+                  "Customers"
+                ]
+              },
+              {
+                "cells": [
+                  "Activities"
+                ]
+              },
+              {
+                "cells": [
+                  "System"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-17T05:02:44.886Z",
+        "before": [
+          {
+            "result": {
+              "duration": 51346,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "login as a given user",
+        "description": "",
+        "id": "contacts-page;login-as-a-given-user",
+        "after": [
+          {
+            "result": {
+              "duration": 76517,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 733873,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user is on the login page",
             "match": {
               "location": "LoginStepDefs.user_is_on_the_login_page()"
             },
@@ -47,25 +221,39 @@
           },
           {
             "result": {
-              "duration": 2745537016,
-              "status": "passed"
+              "duration": 2019257,
+              "status": "skipped"
             },
-            "line": 11,
-            "name": "User logs in as driver",
+            "line": 21,
+            "name": "User logs in using following credentials",
             "match": {
-              "location": "LoginStepDefs.user_logs_in_as_a_driver()"
+              "location": "ContactsStepDefs2.user_logs_in_using_following_credentials(String,String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "user1"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "UserUser123"
+                ]
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1003032,
-              "status": "passed"
+              "duration": 833736,
+              "status": "skipped"
             },
-            "line": 12,
-            "name": "User should be able to login",
+            "line": 24,
+            "name": "User should be logged in",
             "match": {
-              "location": "LoginStepDefs.user_should_be_able_to_login()"
+              "location": "ContactsStepDefs.user_should_be_logged_in()"
             },
             "keyword": "Then "
           }
@@ -77,11 +265,615 @@
         ]
       }
     ],
+    "name": "Contacts page",
+    "description": "",
+    "id": "contacts-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Contacts.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-17T05:02:44.924Z",
+        "before": [
+          {
+            "result": {
+              "duration": 76848,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Login as store manager",
+        "description": "",
+        "id": "login;login-as-store-manager",
+        "after": [
+          {
+            "result": {
+              "duration": 35186,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1231864,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1353093,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user logs in as store manager",
+            "match": {
+              "location": "LoginStepDefs.user_logs_in_as_store_manager()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 584579,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user verifies that \"Dashboard\" page subtitle is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefs.user_verifies_that_page_subtitle_is_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
     "name": "Login",
-    "description": "      As a user I want to be able to login into Vytrack\n      under different roles with different username and password",
+    "description": "  As user, I want to be able to login into vytrack\n  under different roles with username and password",
     "id": "login",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/Login.feature",
     "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-17T05:02:44.953Z",
+        "before": [
+          {
+            "result": {
+              "duration": 54746,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login as a driver",
+        "description": "",
+        "id": "login-as-different-users;login-as-a-driver",
+        "after": [
+          {
+            "result": {
+              "duration": 26734,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 987163,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1001522,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User logs in using \"user1\" and \"UserUser123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user1\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 31
+                }
+              ],
+              "location": "LoginWithParametersStepDefs.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 750819,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the title should contain \"Dashboard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginWithParametersStepDefs.the_title_should_contain(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Login as different users",
+    "description": "",
+    "id": "login-as-different-users",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoginWithParameters.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "open login page and login as store manager",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1141639,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 892220,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user logs in as store manager",
+            "match": {
+              "location": "LoginStepDefs.user_logs_in_as_store_manager()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-17T05:02:44.975Z",
+        "before": [
+          {
+            "result": {
+              "duration": 51786,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify dashboard page",
+        "description": "",
+        "id": "smoke-test;verify-dashboard-page",
+        "after": [
+          {
+            "result": {
+              "duration": 43104,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4790747,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user verifies that \"Dashboard\" page subtitle is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefs.user_verifies_that_page_subtitle_is_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "open login page and login as store manager",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1376836,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1163767,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user logs in as store manager",
+            "match": {
+              "location": "LoginStepDefs.user_logs_in_as_store_manager()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-17T05:02:45.101Z",
+        "before": [
+          {
+            "result": {
+              "duration": 67975,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Verify Manager Dashboards page",
+        "description": "",
+        "id": "smoke-test;verify-manager-dashboards-page",
+        "after": [
+          {
+            "result": {
+              "duration": 44857,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user navigates to \"Dashboards\" then to \"Manage Dashboards\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 843695,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user verifies that \"All Manage Dashboards\" page subtitle is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"All Manage Dashboards\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefs.user_verifies_that_page_subtitle_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "open login page and login as store manager",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1029425,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 901351,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user logs in as store manager",
+            "match": {
+              "location": "LoginStepDefs.user_logs_in_as_store_manager()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-17T05:02:45.119Z",
+        "before": [
+          {
+            "result": {
+              "duration": 99817,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Verify Vehicle page",
+        "description": "",
+        "id": "smoke-test;verify-vehicle-page",
+        "after": [
+          {
+            "result": {
+              "duration": 41420,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "user navigates to \"Fleet\" then to \"Vehicles\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 871730,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user verifies that \"All Cars\" page subtitle is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"All Cars\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefs.user_verifies_that_page_subtitle_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "open login page and login as store manager",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1007126,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 816303,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user logs in as store manager",
+            "match": {
+              "location": "LoginStepDefs.user_logs_in_as_store_manager()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-17T05:02:45.142Z",
+        "before": [
+          {
+            "result": {
+              "duration": 65344,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify Accounts page",
+        "description": "",
+        "id": "smoke-test;verify-accounts-page",
+        "after": [
+          {
+            "result": {
+              "duration": 35424,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "user navigates to \"Customers\" then to \"Accounts\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 883451,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user verifies that \"All Accounts\" page subtitle is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"All Accounts\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefs.user_verifies_that_page_subtitle_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Smoke test",
+    "description": "",
+    "id": "smoke-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SmokeTest.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

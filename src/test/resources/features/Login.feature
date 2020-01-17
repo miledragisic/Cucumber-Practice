@@ -6,7 +6,7 @@ Feature: Login
   under different roles with username and password
 
 
-@wip
+
   Scenario: Login as store manager
     Given user is on the login page
     Then user logs in as store manager
@@ -44,29 +44,4 @@ Feature: Login
       | driver        |
       | sales manager |
       | store manager |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,44 +1,81 @@
 package com.vytrack.step_definitions;
 
+import com.vytrack.pages.BasePage;
 import com.vytrack.pages.LoginPage2;
 import com.vytrack.utilities.ConfigurationReader;
 import com.vytrack.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class LoginStepDefs {
     LoginPage2 loginPage2= new LoginPage2();
 
-
-    @Given("User is on the login page")
-    public void user_is_on_the_login_page() {
-        System.out.println("Opening the Login Page!");
+    @Given("user is on the login page")
+    public void user_is_on_the_login_page(){
+        System.out.println("I am on the login page");
         Driver.get().get(ConfigurationReader.getProperty("url"));
     }
 
-    @When("User logs in as driver")
-    public void user_logs_in_as_a_driver() {
-        System.out.println("User enters username and password");
+    @Then("user logs in as store manager")
+    public void user_logs_in_as_store_manager(){
 
-        loginPage2.login(ConfigurationReader.getProperty("driver"), ConfigurationReader.getProperty("driver_pass"));
+        System.out.println("Login as store manager");
+        String userName= ConfigurationReader.getProperty("store_manager_user_name");
+        String password= ConfigurationReader.getProperty("store_manager_password");
+        loginPage2.login(userName, password);
+    }
+
+    //any string in "word" will become a parameter for step definition method
+    //  And user verifies that "Dashboard" page subtitle is displayed
+
+    @Then("user verifies that {string} page subtitle is displayed")
+    public void user_verifies_that_page_subtitle_is_displayed(String string) {
+
+        BasePage basePage= new BasePage();
+        Assert.assertEquals(string, Driver.get().getTitle());
+        System.out.println("Verifying page subtitle: " + string);
 
     }
 
-    @Then("User should be able to login")
-    public void user_should_be_able_to_login() {
-        System.out.println("User should be on the Home page!");
+    @Then("user logs in as driver")
+    public void user_logs_in_as_driver(){
+
+        System.out.println("Login as driver");
+        String userName= ConfigurationReader.getProperty("driver_username");
+        String pasword= ConfigurationReader.getProperty("driver_password");
+        loginPage2.login(userName, pasword);
+
     }
 
-    @When("User enters the store manager information")
-    public void user_enters_the_store_manager_information() {
-        System.out.println("Entering store manager login info");
-        loginPage2.login(ConfigurationReader.getProperty("store_manager"), ConfigurationReader.getProperty("store_manager_pass"));
+    @Then("user logs in as sales manager")
+    public void user_logs_in_as_sales_manager() {
+
+        System.out.println("Login as sales manager");
+        String userName= ConfigurationReader.getProperty("sales_manager_username");
+        String password= ConfigurationReader.getProperty("sales_manager_password");
+        loginPage2.login(userName, password);
     }
 
-    @When("User enters the sales manager infromation")
-    public void user_enters_the_sales_manager_infromation() {
-        System.out.println("Entering sales manager login info.");
-        loginPage2.login(ConfigurationReader.getProperty("sales_manager"), ConfigurationReader.getProperty("sales_manager_pass"));
+    // Then user enters "storemanager85" userename and "wrong" password
+    @Then("user enters {string} username and {string} password")
+    public void user_enters_username_and_password(String string, String string2) {
+
+        System.out.println("Login with "+string+" username and "+string2+" password.");
+        loginPage2.login(string, string2);
+        Assert.assertNotEquals(Driver.get().getTitle(), "Dashboard");
+
     }
+
+    @Then("user verifies that {string} message is displayed")
+    public void user_verifies_that_message_is_displayed(String string) {
+
+        System.out.println("Verified that warning message is displayed: "+string);
+    }
+
+    @Given("user logs in as {string}")
+    public void user_logs_in_as(String userType) {
+        System.out.println(userType);
+    }
+
 }
