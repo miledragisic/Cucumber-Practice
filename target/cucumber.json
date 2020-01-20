@@ -1,13 +1,105 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-17T05:56:41.417Z",
+        "start_timestamp": "2020-01-20T06:50:22.339Z",
         "before": [
           {
             "result": {
-              "duration": 1071459,
+              "duration": 1223932,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Login as driver",
+        "description": "",
+        "id": "login;login-as-driver",
+        "after": [
+          {
+            "result": {
+              "duration": 3114917001,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4968580872,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is on the login page",
+            "match": {
+              "location": "LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy19.sendKeys(Unknown Source)\n\tat com.vytrack.pages.LoginPage2.login(LoginPage2.java:37)\n\tat com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as_driver(LoginStepDefs.java:47)\n\tat ✽.user logs in as driver(file:src/test/resources/features/Login.feature:18)\n",
+              "duration": 44983665,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "user logs in as driver",
+            "match": {
+              "location": "LoginStepDefs.user_logs_in_as_driver()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1038988,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user verifies that \"Dshboard\" page subtitle is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dshboard\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDefs.user_verifies_that_page_subtitle_is_displayed(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As user, I want to be able to login into vytrack\n  under different roles with username and password",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-20T06:50:30.617Z",
+        "before": [
+          {
+            "result": {
+              "duration": 897813,
               "status": "passed"
             },
             "match": {
@@ -22,7 +114,7 @@
         "after": [
           {
             "result": {
-              "duration": 3289132920,
+              "duration": 3270538191,
               "status": "passed"
             },
             "match": {
@@ -35,7 +127,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3274398315,
+              "duration": 2213144089,
               "status": "passed"
             },
             "line": 9,
@@ -47,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 2978011542,
+              "duration": 3324921769,
               "status": "passed"
             },
             "line": 10,
@@ -69,7 +161,7 @@
           },
           {
             "result": {
-              "duration": 15090145,
+              "duration": 83731613,
               "status": "passed"
             },
             "line": 11,

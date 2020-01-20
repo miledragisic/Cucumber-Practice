@@ -12,7 +12,7 @@ Feature: Login
     Then user logs in as store manager
     And user verifies that "Dashboard" page subtitle is displayed
 
-
+@wip
   Scenario: Login as driver
     Given user is on the login page
     Then user logs in as driver

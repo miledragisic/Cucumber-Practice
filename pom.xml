@@ -8,7 +8,11 @@
     <artifactId>Cucumber-Practice</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
+<!-- compiler. a computer program that translates a source program into a target.  -->
+    <!-- A compiler is a program that translates human-readable source code into
+         computer-executable machine code.
+       - To do this successfully, the human-readable code must comply with the syntax rules
+           of whichever programming language it is written in.-->
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>

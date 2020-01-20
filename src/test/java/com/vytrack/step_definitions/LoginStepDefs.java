@@ -30,7 +30,7 @@ public class LoginStepDefs {
     //  And user verifies that "Dashboard" page subtitle is displayed
 
     @Then("user verifies that {string} page subtitle is displayed")
-    public void user_verifies_that_page_subtitle_is_displayed(String string) {
+        public void user_verifies_that_page_subtitle_is_displayed(String string) {
 
         BasePage basePage= new BasePage();
         Assert.assertEquals(string, Driver.get().getTitle());
@@ -42,9 +42,9 @@ public class LoginStepDefs {
     public void user_logs_in_as_driver(){
 
         System.out.println("Login as driver");
-        String userName= ConfigurationReader.getProperty("driver_username");
-        String pasword= ConfigurationReader.getProperty("driver_password");
-        loginPage2.login(userName, pasword);
+        String userName= ConfigurationReader.getProperty("driver");
+        String password= ConfigurationReader.getProperty("driver_pass");
+        loginPage2.login(userName, password);
 
     }
 
