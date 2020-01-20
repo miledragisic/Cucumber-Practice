@@ -35,18 +35,17 @@ formatter.match({
   "location": "LoginStepDefs.user_logs_in_as_driver()"
 });
 formatter.result({
-  "error_message": "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy19.sendKeys(Unknown Source)\n\tat com.vytrack.pages.LoginPage2.login(LoginPage2.java:37)\n\tat com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as_driver(LoginStepDefs.java:47)\n\tat ✽.user logs in as driver(file:src/test/resources/features/Login.feature:18)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user verifies that \"Dshboard\" page subtitle is displayed",
+  "name": "user verifies that \"Dashboard\" page subtitle is displayed",
   "keyword": "And "
 });
 formatter.match({
   "location": "LoginStepDefs.user_verifies_that_page_subtitle_is_displayed(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"

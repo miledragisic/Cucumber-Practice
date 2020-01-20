@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-20T06:50:22.339Z",
+        "start_timestamp": "2020-01-20T07:03:01.980Z",
         "before": [
           {
             "result": {
-              "duration": 1223932,
+              "duration": 965788,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 3114917001,
+              "duration": 3213929507,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4968580872,
+              "duration": 3657666547,
               "status": "passed"
             },
             "line": 17,
@@ -47,9 +47,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy19.sendKeys(Unknown Source)\n\tat com.vytrack.pages.LoginPage2.login(LoginPage2.java:37)\n\tat com.vytrack.step_definitions.LoginStepDefs.user_logs_in_as_driver(LoginStepDefs.java:47)\n\tat ✽.user logs in as driver(file:src/test/resources/features/Login.feature:18)\n",
-              "duration": 44983665,
-              "status": "failed"
+              "duration": 3178413597,
+              "status": "passed"
             },
             "line": 18,
             "name": "user logs in as driver",
@@ -60,15 +59,15 @@
           },
           {
             "result": {
-              "duration": 1038988,
-              "status": "skipped"
+              "duration": 65269993,
+              "status": "passed"
             },
             "line": 19,
-            "name": "user verifies that \"Dshboard\" page subtitle is displayed",
+            "name": "user verifies that \"Dashboard\" page subtitle is displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Dshboard\"",
+                  "val": "\"Dashboard\"",
                   "offset": 19
                 }
               ],
@@ -95,11 +94,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-01-20T06:50:30.617Z",
+        "start_timestamp": "2020-01-20T07:03:12.165Z",
         "before": [
           {
             "result": {
-              "duration": 897813,
+              "duration": 1364708,
               "status": "passed"
             },
             "match": {
@@ -114,7 +113,7 @@
         "after": [
           {
             "result": {
-              "duration": 3270538191,
+              "duration": 3264600122,
               "status": "passed"
             },
             "match": {
@@ -127,7 +126,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2213144089,
+              "duration": 2233744561,
               "status": "passed"
             },
             "line": 9,
@@ -139,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 3324921769,
+              "duration": 2817131834,
               "status": "passed"
             },
             "line": 10,
@@ -161,7 +160,7 @@
           },
           {
             "result": {
-              "duration": 83731613,
+              "duration": 144763643,
               "status": "passed"
             },
             "line": 11,

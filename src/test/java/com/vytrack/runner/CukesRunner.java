@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
         plugin = {"json:target/cucumber.json", // it is cucumber plugin used for reporting purposes
         "html:target/default-cucumber-reports", // place where to save the report
         "rerun:target/rerun.txt"}, // it will remember only the failed tests
+//      "junit:target/junit/junit-report.xml" ???
 
         features = "src/test/resources/features",
 

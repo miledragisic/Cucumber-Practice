@@ -76,6 +76,7 @@
                         <include>**/*CukesRunner.java</include> <!-- this will say what we need to run, name of our Runner (CucumberRunner)-->
                         <include>**/*FailedCukesRunner.java</include> <!-- first runs CukesRunner then FailedCukesRunner-->
                     </includes>
+                    <testFailureIgnore>false</testFailureIgnore> <!--if true, when some test fails Maven will not assume that Build is failed  -->
                 </configuration>
             </plugin>
             <plugin>
